@@ -30,6 +30,8 @@ contract SolutionTest is Test, Utils {
         console.log("data:");
         console.logBytes(data);
 
+        console.log(gasReport());
+
         bool solved = CREATOR.verify(solutionAddress);
 
         require(solved, "Solution failed");
